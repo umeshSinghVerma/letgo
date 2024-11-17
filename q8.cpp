@@ -1,13 +1,24 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-	int T;
-	scanf("%d",&T);
-	while(T--){
-		int n,k;
-		scanf("%d%d",&n,&k);
-		if(n==1)puts("0");
-		else printf("%d\n",(n-2)/(k-1)+1);
-	}
-	return 0;
+#include <bits/stdc++.h>
+
+using i64 = long long;
+
+void solve() {
+    int n, k;
+    std::cin >> n >> k;
+    
+    std::cout << (n + k - 3) / (k - 1) << "\n";
+}
+
+int main() {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    
+    int t;
+    std::cin >> t;
+    
+    while (t--) {
+        solve();
+    }
+    
+    return 0;
 }
